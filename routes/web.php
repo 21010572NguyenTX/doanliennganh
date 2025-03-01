@@ -26,7 +26,8 @@ Route::get('/manufacturer-search', [ProductController::class, 'manufacturerSearc
 
 
 // Chi tiết thuốc
-Route::get('/medicine', [MedicineController::class, 'index'])->name('medicine.detail');
+Route::get('/medicine/{id}', [MedicineController::class, 'show'])->name('medicine.show');
+
 
 // Triệu chứng
 Route::get('/symptoms', [SymptomController::class, 'index'])->name('symptoms'); // Trang danh sách triệu chứng
