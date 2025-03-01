@@ -28,7 +28,7 @@
                 <ul class="flex space-x-10 text-white font-medium text-base">
                     <li><a href="{{ route('home') }}" class="hover:text-teal-300">Trang Chủ</a></li>
                     <li><a href="{{ route('products') }}" class="hover:text-teal-300">Thuốc chữa bệnh</a></li>
-                    <li><a href="{{ route('diseases') }}" class="hover:text-teal-300">tra cứu bệnh</a></li>
+                    <li><a href="{{ route('diseases') }}" class="hover:text-teal-300">Tra cứu bệnh</a></li>
                     <li><a href="#" class="hover:text-teal-300">Liên Hệ</a></li>
                 </ul>
             </nav>
