@@ -15,6 +15,7 @@ Route::get('/', [MedicineController::class, 'home'])->name('home');
 Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register'); // Hiển thị form đăng ký
 Route::post('/register', [AuthController::class, 'register']); // Xử lý logic đăng ký
 
+
 // Đăng nhập
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login'); // Hiển thị form đăng nhập
 Route::post('/login', [AuthController::class, 'login']); // Xử lý logic đăng nhập
@@ -41,3 +42,9 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
+// Route cho nút "Thêm vào ghi chú"
+Route::get('/medicine/{id}/add-note', [MedicineController::class, 'addNote'])->name('medicine.addNote');
+
+// Route cho nút "Tư vấn bác sĩ"
+Route::get('/medicine/{id}/consult-doctor', [MedicineController::class, 'consultDoctor'])->name('medicine.consult_doctor');

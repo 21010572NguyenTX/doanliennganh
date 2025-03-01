@@ -11,6 +11,7 @@
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">Đăng Ký</h2>
         <form action="{{ route('login') }}" method="POST" class="space-y-4">
+        @csrf
             <div>
                 <label for="fullname" class="block text-sm font-medium text-gray-700">Họ và Tên:</label>
                 <input 
