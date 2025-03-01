@@ -6,6 +6,10 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\SymptomController;
 use App\Http\Controllers\ProductController;
+<<<<<<< HEAD
+=======
+use App\Http\Controllers\DiseaseController;
+>>>>>>> 4f1eaef (BV Truong)
 
 // Trang chủ
 Route::get('/', [MedicineController::class, 'home'])->name('home');
@@ -26,11 +30,18 @@ Route::get('/manufacturer-search', [ProductController::class, 'manufacturerSearc
 
 
 // Chi tiết thuốc
+<<<<<<< HEAD
 Route::get('/medicine/{id}', [MedicineController::class, 'show'])->name('medicine.show');
 
 
 // Triệu chứng
 Route::get('/symptoms', [SymptomController::class, 'index'])->name('symptoms'); // Trang danh sách triệu chứng
+=======
+Route::get('/medicine', [MedicineController::class, 'index'])->name('medicine.detail');
+
+// Triệu chứng
+Route::get('/diseases', [DiseaseController::class, 'index'])->name('diseases');
+>>>>>>> 4f1eaef (BV Truong)
 
 Route::get('/', function () {
     return view('home');

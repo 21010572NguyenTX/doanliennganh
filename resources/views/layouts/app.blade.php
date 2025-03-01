@@ -28,7 +28,11 @@
                 <ul class="flex space-x-10 text-white font-medium text-base">
                     <li><a href="{{ route('home') }}" class="hover:text-teal-300">Trang Chủ</a></li>
                     <li><a href="{{ route('products') }}" class="hover:text-teal-300">Thuốc chữa bệnh</a></li>
+<<<<<<< HEAD
                     <li><a href="#" class="hover:text-teal-300">Giới Thiệu</a></li>
+=======
+                    <li><a href="{{ route('diseases') }}" class="hover:text-teal-300">tra cứu bệnh</a></li>
+>>>>>>> 4f1eaef (BV Truong)
                     <li><a href="#" class="hover:text-teal-300">Liên Hệ</a></li>
                 </ul>
             </nav>
