@@ -4,11 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\MedicineDetail;
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use App\Models\Medicine;
-=======
 
->>>>>>> 4f1eaef (BV Truong)
 class MedicineController extends Controller
 {
     public function index()
@@ -17,7 +14,6 @@ class MedicineController extends Controller
         $medicines = MedicineDetail::paginate(20); // Số lượng mục trên mỗi trang
         return view('medicine.detail', compact('medicines'));
     }
-<<<<<<< HEAD
     public function show($id)
     {
         // Tìm trong bảng medicine theo id
@@ -27,6 +23,5 @@ class MedicineController extends Controller
         // và truyền biến $medicine qua cho view
         return view('medicine.details', compact('medicine'));
     }
-=======
->>>>>>> 4f1eaef (BV Truong)
+
 }
